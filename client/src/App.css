@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my-message {
+  background-color: rgb(186, 149, 149);
+  margin-left: auto;
+  display: inline-block;
+  max-width: 400px;
+  margin-top: 5px;
+  /* margin-bottom: 5px; */
+  box-sizing: border-box;
+  border-radius: 12px 12px 0px 12px;
+  padding-left: 10px;
+  padding-right: 15px;
+  margin-right: 5px;
+}
+
+.other-message {
+  background-color: #ccc;
+  margin-right: auto;
+  display: inline-block;
+  max-width: 400px;
+  margin-top: 5px;
+  /* margin-bottom: 5px; */
+  box-sizing: border-box;
+  border-radius: 12px 12px 12px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 700;
+}
+.my-message .ownerInfo {
+  font-family: monospace;
+  font-weight: bold;
+  color: #4507a3;
+}
+.other-message .ownerInfo {
+  font-weight: bold;
+  color: rgb(82, 3, 89);
+  font-family: monospace;
+}
+.my-message .msgContent,
+.my-message .ownerInfo {
+  /* text-align */
+  text-align: start;
+}
+.other-message .msgContent,
+.other-message .ownerInfo {
+  text-align: start;
+}
+
+.form {
+  top: 90vh;
+  position: sticky;
+  margin-top: 10px;
+}
+.header {
+  height: 8vh;
+  margin-bottom: 5px;
+  background-color: #0fb493;
+}
+.header .loggedIn {
+  margin-top: 13px;
+}
+.header .loggedIn a {
+  display: flex;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 30px;
+  background-color: #9147ff;
+  padding: 0 20px;
+  :hover {
+    background-color: #772ce8;
+  }
+}
+.header .notLoggedIn {
+  margin-top: 7px;
+  margin-right: 40px;
+}
+.header .notLoggedIn .btn {
+  display: flex;
+  align-items: center;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 30px;
+  background-color: #9147ff;
+  color: black;
+  padding: 0 20px;
+  :hover {
+    background-color: #772ce8;
+  }
+}
